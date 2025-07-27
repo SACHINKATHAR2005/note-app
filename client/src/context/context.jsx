@@ -14,7 +14,7 @@ export const ContectProvider = ({ children }) => {
     const loginUser = async (data) => {
         setLoading(true);
         try {
-            const res = await axios.post("http://localhost:5000/auth/login", data, {
+            const res = await axios.post("https://note-app-crjj.onrender.com/auth/login", data, {
                 withCredentials: true,
             });
             setUser(res.data.data)
@@ -33,7 +33,7 @@ export const ContectProvider = ({ children }) => {
     const registerUser = async (data) => {
         setLoading(true);
         try {
-            const res = await axios.post("http://localhost:5000/auth/register", data, {
+            const res = await axios.post("https://note-app-crjj.onrender.com/auth/register", data, {
                 withCredentials: true,
             });
             setUser(res.data.data)

@@ -12,7 +12,7 @@ import noteRouter from "./routes/notes.router.js"
 
 app.use(express.json());
 app.use(cors({
-    origin:"https://note-app-vert-kappa.vercel.app/",
+    origin:"https://note-app-vert-kappa.vercel.app"|| 'https://note-app-git-main-sachins-projects-97871832.vercel.app',
     credentials:true,
     methods:["GET","POST","PUT","DELETE"],
 
