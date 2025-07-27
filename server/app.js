@@ -12,7 +12,7 @@ import noteRouter from "./routes/notes.router.js"
 
 app.use(express.json());
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://note-app-vert-kappa.vercel.app/",
     credentials:true,
     methods:["GET","POST","PUT","DELETE"],
 
